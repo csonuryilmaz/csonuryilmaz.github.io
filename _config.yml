@@ -28,6 +28,8 @@ github_username: csonuryilmaz
 stackoverflow_username: 1750142
 
 google_analytics: UA-113899594-1
+disqus:
+  shortname: csonuryilmaz
 
 # Build settings
 markdown: kramdown

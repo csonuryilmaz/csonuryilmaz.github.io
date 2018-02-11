@@ -2,7 +2,8 @@
 layout: post
 title:  "Connect To Workstation With Hamachi"
 date:   2018-02-04 00:00:00 +0300
-categories: hamachi vpn ssh remote
+categories: hamachi
+comments: true
 ---
 
 Let's assume you have a workstation (or a pc) at office. For some various reasons, you don't have VPN ability to your corporate network. But you want to have remote access to your office workstation, by this way you can work remotely. This was my case and I installed a LAN over *internet* with **hamachi**, I added office workstation and home laptop to the same network, I connected to my office workstation with **ssh** and did all my job. So this is how I did it!
@@ -101,3 +102,5 @@ Happy coding.
 
 [hamachi download page]: https://www.vpn.net/linux
 [logmein hamachi user guide]: https://secure.logmein.com/welcome/documentation/EN/pdf/Hamachi/LogMeIn_Hamachi_UserGuide.pdf
+
+{% include share-post-on-twitter.html %}
