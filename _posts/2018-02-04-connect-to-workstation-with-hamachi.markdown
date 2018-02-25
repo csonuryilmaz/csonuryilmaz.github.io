@@ -94,13 +94,13 @@ You have new mail.
 Last login: Sun Feb  4 17:28:50 2018 from 25.65.75.187
 {% endhighlight %}
 
-With `-X` option, you can use desktop applications as well as command-line applications. Desktop applications will be forwarded to your desktop as in remote desktop, VNC or team viewer session. 
+With `-X` option, you can use desktop applications as well as command-line applications. Desktop applications will be forwarded to your desktop as in remote desktop, VNC or team viewer session. In conjunction with compress `-C` option it will be faster on slow connections (for example, on slow internet), but if you have a local fast network (for example, lan or intranet) it won't work better, because compression/decompression is a CPU cost. So use `-C` option cautiously.
 
 But this method will be better!
 
-Happy coding.
-
 [hamachi download page]: https://www.vpn.net/linux
 [logmein hamachi user guide]: https://secure.logmein.com/welcome/documentation/EN/pdf/Hamachi/LogMeIn_Hamachi_UserGuide.pdf
+
+Happy coding.
 
 {% include share-post-on-twitter.html %}
