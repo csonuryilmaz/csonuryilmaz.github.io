@@ -13,18 +13,34 @@ Office workstation is a 64 bit **debian 8.10** desktop. Home laptop is a 32 bit 
 x86
 {% highlight bash %}
 $ wget https://www.vpn.net/installers/logmein-hamachi_2.1.0.174-1_i386.deb
-
+...
 $ sudo gdebi logmein-hamachi_2.1.0.174-1_i386.deb
 {% endhighlight %}
 
 x64
 {% highlight bash %}
 $ wget https://www.vpn.net/installers/logmein-hamachi_2.1.0.174-1_amd64.deb
-
+...
 $ sudo gdebi logmein-hamachi_2.1.0.174-1_amd64.deb
 {% endhighlight %}
 
 **Note:** Alternatively, you can use `sudo dpkg -i` in order to install **deb** packages. Also [hamachi documentation][logmein hamachi user guide] contains *How to Install the Client to a Local Computer* section with some details.
+
+If you're using an rpm based distribution like fedora or centos:
+
+x86
+{% highlight bash %}
+$ wget https://www.vpn.net/installers/logmein-hamachi-2.1.0.174-1.i486.rpm
+...
+$ sudo rpm -ivh logmein-hamachi-2.1.0.174-1.i486.rpm
+{% endhighlight %}
+
+x64
+{% highlight bash %}
+$ wget https://www.vpn.net/installers/logmein-hamachi-2.1.0.174-1.x86_64.rpm
+...
+$ sudo rpm -ivh logmein-hamachi-2.1.0.174-1.x86_64.rpm 
+{% endhighlight %}
 
 After installation you can check version:
 {% highlight bash %}
