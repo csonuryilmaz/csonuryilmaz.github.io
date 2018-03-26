@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Search Dictionary From Command Line (Part 1)"
-date:   2018-03-25 00:00:00 +0300
+date:   2018-03-26 00:00:00 +0300
 categories: curl dict
 comments: true
 ---
