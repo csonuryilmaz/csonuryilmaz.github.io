@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to Downgrade a Specific Package on Debian"
-date:   2020-01-05 00:00:00 +0300
+date:   2020-01-05 09:00:00 +0300
 categories: debian apt-get apt-cache
 comments: true
 ---
