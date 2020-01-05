@@ -14,25 +14,26 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: T-Shaped Journey
-motto: It's a mission and a passion!
 email: csonuryilmaz@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Ideas written in this blog, come from blood, sweat and tears. I've experimented many tools, techniques, and best practices. Some worked, some not. But all of them transformed me into what you see here by now.
+  Ideas written in this blog, come from blood, sweat and tears. I've experimented many tools, techniques, and best practices. Some worked, some not. But all of them transformed me into what you see here by now. It's a mission and a passion!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: csonuryilmaz
 github_username: csonuryilmaz
-stackoverflow_username: 1750142
-
+author: Onur Yılmaz
 google_analytics: UA-113899594-1
 disqus:
   shortname: csonuryilmaz
+show_excerpts: true
+rss: subscribe
 
 # Build settings
 markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - jekyll-seo-tag
 exclude:
   - Gemfile
   - Gemfile.lock

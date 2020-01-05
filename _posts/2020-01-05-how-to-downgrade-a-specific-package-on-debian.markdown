@@ -8,7 +8,7 @@ comments: true
 
 I use [jekyll](https://jekyllrb.com/) for static site generation. Its latest version requires minimum `ruby 2.4.0` as of now. But Debian 9.11 (`stretch`) has `ruby 2.3.3` in its repositories, at the time of writing.
 
-```bash
+```txt
 $ ruby -v
 ruby 2.3.3p222 (2016-11-21) [x86_64-linux-gnu]
 ```
@@ -20,7 +20,7 @@ So I decided to use [rvm](https://rvm.io/) to get latest versions of `ruby`.
 
 When you try to install `rvm`, it gives an error about its dependencies and there are unmet dependencies.
 
-```bash
+```txt
 $ sudo apt install curl g++ gcc autoconf automake bison libc6-dev libffi-dev libgdbm-dev libncurses5-dev libsqlite3-dev libtool libyaml-dev make pkg-config sqlite3 zlib1g-dev libgmp-dev libreadline-dev libssl-dev
 ...
 ...
@@ -34,7 +34,7 @@ Above, we try to install the dependencies required for the RVM utility to build 
 
 Normally it's the desired situation when you use backports repository, but in `rvm` case it makes problem. I don't guess `rvm` won't work with `3.27.2-3~bpo9+1`. It's probably because of a static definition about Debian package requirement which ignores `stretch-backports`. For example, when you're on Debian 9.x (`stretch`) `libsqlite3-0` required version should be `3.16.2-5+deb9u1`. There may be a statement like this.
 
-```bash
+```txt
 $ apt-cache policy libsqlite3-0
 libsqlite3-0:
   Installed: 3.27.2-3~bpo9+1
@@ -49,7 +49,7 @@ libsqlite3-0:
 
 You can continue to install `rvm` without its dependencies ..
 
-```bash
+```txt
 $ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 ...
 gpg: Total number processed: 2
@@ -70,7 +70,7 @@ $ source ~/.rvm/scripts/rvm
 
 .. but practically it doesn't work when you try to install a `ruby` version.
 
-```bash
+```txt
 $ rvm install 2.6.3
 ...
 Updating system.....
@@ -82,7 +82,7 @@ Requirements installation failed with status: 100.
 
 The only way to satisfy dependencies seems to downgrade `libsqlite3-0` package to version which came from `stretch` repository.
 
-```bash
+```txt
 $ sudo apt-get install libsqlite3-0=3.16.2-5+deb9u1
 ...
 The following packages will be DOWNGRADED:
@@ -105,7 +105,7 @@ libsqlite3-0:
 
 After downgrade, when you check `rvm` requirements again, its dependencies will be installed successfully.
 
-```bash
+```txt
 $ rvm requirements
 RVM used your Gemfile for selecting Ruby, it is all fine - Heroku does that too,
 you can ignore these warnings with 'rvm rvmrc warning ignore /home/onur/github/csonuryilmaz/csonuryilmaz.github.io/Gemfile'.
@@ -122,7 +122,7 @@ Requirements installation successful.
 
 Now, you can install any version of ruby without a problem.
 
-```bash
+```txt
 $ rvm install 2.6.3
 Searching for binary rubies, this might take some time.
 ...
