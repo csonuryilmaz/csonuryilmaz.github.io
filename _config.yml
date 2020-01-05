@@ -17,11 +17,7 @@ title: T-Shaped Journey
 motto: It's a mission and a passion!
 email: csonuryilmaz@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Hi, welcome to my blog. As being an avid software developer,
-  my blog contains some notes, how-to docs and my point of view
-  about software development, programming languages, computer 
-  science topics and all tech related stuff. Thanks for visiting,
-  and happy coding!
+  Ideas written in this blog, come from blood, sweat and tears. I've experimented many tools, techniques, and best practices. Some worked, some not. But all of them transformed me into what you see here by now.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: csonuryilmaz
@@ -34,7 +30,7 @@ disqus:
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-modernist
+theme: minima
 gems:
   - jekyll-feed
 exclude:
