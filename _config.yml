@@ -18,7 +18,7 @@ email: csonuryilmaz@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Ideas written in this blog, come from blood, sweat and tears. I've experimented many tools, techniques, and best practices. Some worked, some not. But all of them transformed me into what you see here by now. It's a mission and a passion!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://csonuryilmaz.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: csonuryilmaz
 github_username: csonuryilmaz
 author: Onur Yılmaz
