@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "How to Change Root Password on GNU/Linux"
+title:  "How to Change Root Password"
 date:   2020-01-19 09:00:00 +0300
-categories: debian gnu linux root passwd
+categories: debian centos gnu linux root passwd
 comments: true
 ---
 
